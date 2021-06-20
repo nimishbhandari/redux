@@ -2,7 +2,7 @@ import React from "react";
 
 const Main = () => {
   return (
-    <div className="Main">
+    <div className="main">
       <div className="main-head">Simple Redux Basics</div>
       <div className="main-body">
         <button className="btn">-</button>
