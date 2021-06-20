@@ -2,3 +2,36 @@
   margin: 0;
   padding: 0;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.main-head {
+  font-size: 40px;
+  font-weight: 700;
+  color: #666;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.main-text {
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.main-add-btn {
+  padding: 0.4rem;
+  margin: 0.4rem;
+  border: none;
+  border-radius: 5px;
+  background-color: lightgreen;
+  color: #666;
+  min-width: 2rem;
+}
