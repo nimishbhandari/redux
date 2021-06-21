@@ -10,13 +10,28 @@ export const todoReducers = (state = initialState, action) => {
       const { id, data } = action.payload;
       return {
         ...state,
-        data: [
+        list: [
           ...state.list,
           {
             id: id,
             data: data,
           },
         ],
+      };
+
+    case DELETE_TASK:
+      const newList = state.list.filter(
+        (elem) => elem.id !== action.payload.id
+      );
+      return {
+        ...state,
+        list: newList,
+      };
+
+    case REMOVE_ALL:
+      return {
+        ...state,
+        list: [],
       };
 
     default:

@@ -10,9 +10,10 @@ export const addTask = (data) => {
   };
 };
 
-export const deleteTask = () => {
+export const deleteTask = (id) => {
   return {
     type: DELETE_TASK,
+    payload: { id },
   };
 };
 
